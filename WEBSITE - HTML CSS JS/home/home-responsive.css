@@ -1,0 +1,298 @@
+@media only screen and (max-width: 1024px) {
+    .first-section video {
+        margin: 5rem 0;
+        transform: scale(1.3);
+    }
+
+    .agent1 {
+        left: -3rem;
+        zoom: 0.85;
+    }
+
+    .agent2 {
+        left: 4rem;
+        zoom: 0.9;   
+    }
+
+    .agent3 {
+        left: 18rem;
+        zoom: 0.85;   
+    }
+
+    .title {
+        left: 44%;
+        bottom: 23%;
+        zoom: 0.95;
+    }
+
+    .first-section .button {
+        bottom: 17%;
+        right: 20%;
+    }
+
+    .second-section .background-image {
+        transform: scale(1.5);
+        margin: 5rem 0;
+    }
+
+    .agent-second-section {
+        zoom: 0.9;
+        bottom: 5%;
+        right: -14%;
+    }
+    
+    .n-th-agent-second-section {
+        bottom: 4%;
+        right: 3%;
+        zoom: 0.85;
+    }
+
+    .data-text {
+        top: 50%;
+        transform: translateY(-50%);
+        left: 5%;
+        zoom: 0.95;
+    }
+
+    .third-section video {
+        transform: scale(2.3);
+    }
+
+    .third-section .button {
+        right: -75%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .first-section video {
+        margin: 13rem 0;
+        transform: scale(1.8);
+    }
+
+    .agents-trailer .background-shape {
+        transform: rotateY(180deg);
+        opacity: .4;
+        transform: rotateX(180deg);
+    }
+
+    .agent1 {
+        left: -2.5rem;
+        zoom: 0.88;
+    }
+
+    .agent2 {
+        left: 4.75rem;
+        zoom: 0.95;   
+    }
+
+    .agent3 {
+        left: 19rem;
+        zoom: 0.91;   
+    }
+
+    .title {
+        left: 37%;
+        top: 25%;
+        zoom: 0.85;
+    }
+
+    .first-section .button {
+        bottom: 56%;
+    }
+
+    .second-section .background-image {
+        transform: scale(1.8);
+        margin: 10rem 0;
+    }
+
+    .agent-second-section {
+        zoom: 0.8;
+        bottom: 9%;
+        right: -11%;
+        transform: rotateY(180deg);
+    }
+    
+    .n-th-agent-second-section {
+        display: none;
+    }
+
+    .data-text {
+        left: 5%;
+        zoom: 0.9;
+    }
+
+    .third-section {
+        zoom: 1.1;
+    }
+
+    .third-section .button {
+        margin-top: 3rem;
+        right: -72%;
+    }
+
+    .book-container {
+        zoom: 0.88;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .first-section video {
+        margin: 18rem 0;
+        transform: scale(2.4);
+    }
+
+    .agent1 {
+        display: none;
+    }
+
+    .agent2 {
+        left: -4rem;
+        zoom: .95;   
+    }
+
+    .agent3 {
+        left: 8rem;
+        zoom: 1;   
+    }
+
+    .agents-trailer .background-shape {
+        opacity: .5;
+    }
+
+    .title {
+        left: 18%;
+        top: 16%;
+        zoom: .9;
+    }
+
+    .first-section .button {
+        bottom: 65%;
+        left: 40%;
+        zoom: 1.1;
+    }
+
+    .second-section .background-image {
+        transform: scale(2.4);
+        margin: 18rem 0;
+    }
+
+    .agent-second-section {
+        zoom: 0.8;
+        bottom: 9%;
+        right: -15%;
+        transform: rotateY(180deg);
+    }
+
+    .data-text {
+        left: 5%;
+        zoom: 0.9;
+        top: 25%;
+    }
+
+    .third-section video {
+        transform: scale(4);
+    }
+
+
+    .third-section .button {
+        margin-top: 1rem;
+        right: -67%;
+    }
+
+    .book-container {
+        zoom: 0.9;
+    }
+
+    .book-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    #prev-button, #next-button {
+        display: none;
+    }
+
+    .responsive-button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 100vw;
+        zoom: 1.2;
+    }
+
+    .responsive-button #prev-button, .responsive-button #next-button {
+        display: inline;
+    }
+
+    #paper-4 .content .button {
+        zoom: 1.1;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .first-section video {
+        margin: 24rem 0;
+        transform: scale(3.3);
+    }
+
+    .agent2 {
+        zoom: 1.1;   
+    }
+
+    .agent3 {
+        zoom: 1.05;   
+    }
+
+    .agents-trailer .background-shape {
+        opacity: .6;
+    }
+
+    .title {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 10%;
+        zoom: .8;
+    }
+
+    .first-section .button {
+        bottom: 74%;
+        left: 47%;
+    }
+
+    .second-section .background-image {
+        transform: scale(2.6);
+        margin: 20rem 0;
+    }
+
+    .agent-second-section {
+        zoom: 0.68;
+        bottom: 9%;
+        right: -18%;
+    }
+
+    .data-text {
+        top: 28%;
+        zoom: 0.8;
+    }
+
+    .third-section video {
+        transform: scale(4.5);
+    }
+
+    .third-section .button {
+        margin-top: 1.5rem;
+        right: -55%;
+    }
+
+    .book-container {
+        zoom: 0.7;
+    }
+
+    .responsive-button {
+        zoom: 1.4;
+    }
+}

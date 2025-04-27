@@ -1,0 +1,677 @@
+.first-section {
+    position: relative;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    opacity: .8;
+    margin: 0;
+    z-index: 0;
+    transform: scale(1.05);
+}
+
+.title {
+    position: absolute;
+    bottom: 22%;
+    left: 48%;
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    gap: .75rem;
+}
+
+.title p {
+    font-family: spenbeb-game;
+    font-size: 5.75rem;
+    color: var(--p2-bone);
+    letter-spacing: 1rem;
+    -webkit-text-stroke: .05rem var(--p2-blue-zodiak);
+    text-shadow: 0 0 0.7rem var(--p1-crystal-blue);
+}
+
+.title img {
+    width: 100%;
+    max-width: 7rem;
+    height: max-content;
+}
+
+.hover-logo {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.title-logo-normal:hover {
+    opacity: 0;
+}
+
+.hover-logo:hover {
+    opacity: 1;
+}
+
+.agents-trailer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.agents-trailer .background-shape {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: 100%;
+    background-color: var(--p3-old-lace);
+    opacity: .35;
+    clip-path: polygon(0% 0%, 5% 0%, 12% 12%, 23% 17%, 30% 38%, 37% 42%, 47% 57%, 55% 60%, 59% 70%, 68% 67%, 75% 69%, 85% 70%, 91% 68%, 96% 83%, 100% 85%, 100% 93%, 100% 100%, 0% 100%);
+}
+
+.agent1, .agent2, .agent3 {
+    width: 16rem;
+    height: 16rem;
+    background-size: 150%;
+    background-clip: padding-box;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    position: absolute;
+}
+
+.agent1 {
+    background-image: url("../../ASSETS/image/agents/browlie.png");
+    width: 100%;
+    height: 100%;
+    max-width: 28rem;
+    max-height: 44rem;
+    z-index: 3;
+    left: -2rem;
+}
+
+.agent2 {
+    background-image: url("../../ASSETS/image/agents/alexa.png");
+    transform: scaleX(-1);
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    max-width: 33rem;
+    max-height: 48rem;
+    left: 6.5rem;
+}
+
+.agent3 {
+    background-image: url("../../ASSETS/image/agents/lanavo.png");
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    max-width: 24rem;
+    max-height: 38rem;
+    left: 21rem;
+}
+
+.first-section .button {
+    position: absolute;
+    z-index: 5;
+    bottom: 8.5rem;
+    right: 18rem;
+}
+
+.play-now-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: .25rem;
+}
+
+.play-now-button span {
+    color: var(--p1-earth-blue);
+    font-size: 2.5rem;
+    stroke: var(--black);
+}
+
+.play-now-button:hover span {
+    color: var(--white);
+}
+
+.play-now-button svg {
+    width: 100%;
+    height: 100%;
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+    transform: rotate(180deg);
+    color: var(--black);
+}
+
+.play-now-button:hover svg {
+    color: var(--p3-light-khaki);
+}
+
+.second-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.second-section .section-marker-top, .second-section .section-marker-bottom {
+    position: absolute;
+    z-index: 10;
+}
+
+.second-section .background-image {
+    position: relative;
+    opacity: .8;
+    left: 0;
+    top: 0;
+    height: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.data-text {
+    position: absolute;
+    top: 16rem;
+    left: 8rem;
+    width: 100%;
+    max-width: 36rem;
+    height: max-content;
+    background-color: rgba(254, 250, 246, 0.6);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 0 2rem var(--p3-eucalyptus);
+}
+
+.data-text .title-game-name {
+    font-family: 'spenbeb-game';
+    font-size: 3rem;
+    width: max-content;
+    color: var(--p3-eucalyptus);
+}
+
+.data-text .motto div {
+    position: absolute;
+    font-family: 'mighty-souly';
+    font-size: 3rem;
+    color: var(--p2-blue-zodiak);
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 0;
+    top: 2.5rem;
+    left: 5rem;
+    max-width: max-content;
+    letter-spacing: .25rem;
+    border-right: .4rem solid var(--p4-phthalo-green);
+    animation: typing-text 3s steps(30, end) infinite, blink-caret .75s step-end infinite;
+}
+
+@keyframes typing-text {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: var(--p4-phthalo-green);
+    }
+}
+
+.agent-second-section {
+    position: absolute;
+    bottom: 2rem;
+    right: -11rem;
+    width: 52rem;
+    z-index: 3;
+}
+
+.n-th-agent-second-section {
+    position: absolute;
+    bottom: 2rem;
+    right: 4rem;
+    width: 100%;
+    max-width: 42rem;
+    z-index: 4;
+}
+
+.data-text hr {
+    background-color: var(--p1-earth-blue);
+    border-width: 0;
+    height: .25rem;
+    margin: 1rem 0;
+}
+
+.data-text .description {
+    font-family: 'rationale';
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    text-align: justify;
+    line-height: 2rem;
+}
+
+.third-section {
+    overflow: hidden;
+}
+
+.third-section .section-marker-top, .third-section .section-marker-bottom {
+    position: relative;
+}
+
+.third-section video {
+    opacity: .4;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.book-container {
+    width: 100%;
+    margin: 2rem 0;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+
+.agents-book {
+    top: 0;
+    left: 0;
+    width: 25rem;
+    height: 34rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10rem;
+    transition: transform 1s;
+}
+
+.agents-book .paper {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    perspective: 90rem;
+}
+
+.paper .front, .paper .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 1s;
+}
+
+.paper .front {
+    z-index: 1;
+    backface-visibility: hidden;
+}
+
+.paper .back {
+    z-index: 0;
+}
+
+.front-content, .back-content {
+    width: 100%;
+    height: 100%;
+    background-color: var(--p3-old-lace);
+    position: relative;
+}
+
+.front-content {
+    border-radius: 0 .5rem .5rem 0;
+}
+
+.front-content:not(.front-cover), .back-content:not(.back-cover) {
+    border: .1rem solid var(--p4-phthalo-green);
+}
+
+.front-content:not(.front-cover) {
+    border-left-width: .2rem;
+}
+
+.back-content:not(.back-cover) {
+    border-right-width: .2rem;
+}
+
+.back-content {
+    border-radius: .5rem 0 0 .5rem;
+}
+
+.front-cover, .back-cover {
+    background-color: var(--p2-blue-zodiak);
+    border: .5rem solid var(--p3-light-khaki);
+}
+
+.front-cover {
+    border-left: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.back-cover {
+    border-right: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.back-content {
+    transform: rotateY(180deg);
+}
+
+.flipped .front, .flipped .back {
+    transform: rotateY(-180deg);
+}
+
+#paper-1 {
+    z-index: 4;
+}
+
+#paper-2 {
+    z-index: 3;
+}
+
+#paper-3 {
+    z-index: 2;
+}
+
+#paper-4 {
+    z-index: 1;
+}
+
+.responsive-button {
+    display: none;
+}
+
+#prev-button svg, #next-button svg {
+    width: 3rem;
+    height: 3rem;
+    color: var(--p1-earth-blue);
+    cursor: pointer;
+    clip-path: circle();
+    background-color: var(--white);
+}
+
+.animation-container {
+    width: .75rem;
+    animation: horizontal-motion 1s linear .25s infinite alternate;
+}
+
+#prev-button .animation-container {
+    width: .75rem;
+    transform: translateX(-3rem);
+}
+
+@keyframes horizontal-motion {
+    0% {
+        margin-left: 0;
+    }
+
+    50% {
+        margin-left: 100%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+.hidden-book-button {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.front-cover img {
+    width: 70%;
+}
+
+.front-cover p {
+    font-family: mighty-souly;
+    color: var(--white);
+    font-size: 2rem;
+    letter-spacing: .1rem;
+}
+
+.back-cover img {
+    width: 70%;
+}
+
+.back-cover p {
+    font-family: mighty-souly;
+    color: var(--white);
+    font-size: 2rem;
+    letter-spacing: .1rem;
+}
+
+.third-section .button {
+    position: relative;
+    z-index: 5;
+    right: -82%;
+    bottom: 5%;
+    transform: scale(0.8);
+    margin-bottom: 1.25rem;
+}
+
+.all-agents-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: .25rem;
+}
+
+.all-agents-button span {
+    color: var(--p1-earth-blue);
+    font-size: 2.5rem;
+    stroke: var(--black);
+}
+
+.all-agents-button:hover span {
+    color: var(--white);
+}
+
+.all-agents-button svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    transform: rotate(180deg);
+    color: var(--black);
+}
+
+.all-agents-button:hover svg {
+    color: var(--p3-light-khaki);
+}
+
+.agent-content-back, .agent-content-front {
+    overflow: hidden;
+}
+
+.agent-picture-book {
+    position: relative;
+    scale: 1.2;
+    bottom: -3.75rem;
+    left: 0;
+}
+
+.agents-book .roles {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    top: .5rem;
+    z-index: 4;
+    gap: .5rem;
+    padding: .25rem .5rem;
+    border-radius: 1rem;
+}
+
+.agent-content-front .roles {
+    left: .5rem;
+}
+
+.agent-content-back .roles {
+    right: .5rem;
+}
+
+.agent-content-back .roles-picture, .agent-content-front .roles-picture {
+    position: relative;
+    z-index: 5; 
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.agent-content-back .agent-name-book, .agent-content-front .agent-name-book {
+    background-color: var(--p4-tan-brown);
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+    border-radius: 1rem;
+    height: 4rem;
+    padding: .25rem .25rem 1rem .25rem;
+    left: 0;
+    bottom: -.75rem;
+    font-family: 'spenbeb-game';
+    display: flex;
+    justify-content: center;
+    font-size: 1.75rem;
+    color: var(--p4-phthalo-green);
+}
+
+.agent-name-book p {
+    color: var(--p2-blue-zodiak);
+    letter-spacing: .25rem;
+}
+
+.roles p {
+    font-family: rationale;
+    font-size: 1.25rem;
+}
+
+.agent-content-back .background-agent, .agent-content-front .background-agent {
+    position: absolute;
+    width: max-content;
+    height: inherit;
+    opacity: .5;
+    transform: translateX(-28%);
+}
+
+.agent-content-back .page-number, .agent-content-front .page-number {
+    position: absolute;
+    z-index: 5;
+}
+
+.agent-content-back .roles, .agent-content-front .roles {
+    position: absolute;
+    background-color: var(--p3-light-khaki);
+    width: max-content;
+    padding-right: .75rem;
+}
+
+.roles p {
+    color: var(--p2-blue-zodiak);
+}
+
+.agent-content-back .page-number, .agent-content-front .page-number {
+    font-family: spenbeb-game;
+    font-size: 1.5rem;
+    padding: .01rem .5rem .1rem .25rem;
+    width: 2rem;
+    height: 2.75rem;
+}
+
+.agent-content-back .page-number, .agent-content-front .page-number {
+    top: 0;
+    clip-path: polygon(0% 0%, 70% 0%, 100% 25%, 80% 75%, 100% 85%, 75% 100%, 25% 85%, 0% 100%);
+    background-color: var(--p3-light-khaki);
+}
+
+.agent-content-back .page-number p, .agent-content-front .page-number p {
+    color: var(--p1-earth-blue);
+}
+
+.agent-content-back .page-number {
+    left: 0;
+}
+
+.agent-content-front .page-number {
+    z-index: 0;
+    transform: rotateY(-180deg);
+    right: 0;
+}
+
+.agent-content-front .page-number p {
+    transform: rotateY(180deg);
+}
+
+.before-back-cover .content {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-image: url('../../ASSETS/image/logo/palorant/export-result/dark/palorant-dark-text.png');
+    background-size: 8%;
+    background-repeat: no-repeat;
+    margin: .25rem .25rem;
+}
+
+.before-back-cover p {
+    width: max-content;
+}
+
+.content .button-description {
+    font-family: 'mighty-souly';
+    font-size: 1.75rem;
+}
+
+.before-back-cover .content .button {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1.1);
+}
+
+.content .button svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    transform: rotate(180deg);
+}
+
+.content .button span {
+    font-size: 1.5rem;
+}

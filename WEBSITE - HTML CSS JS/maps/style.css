@@ -1,0 +1,259 @@
+.container {
+    position: relative;
+}
+
+.video-background {
+    width: 100%;
+    height: 56rem;
+    position: relative;
+    opacity: .8;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: fadeEffectVideo .5s linear forwards;
+}
+
+@keyframes fadeEffectVideo {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: .4;
+    }
+}
+
+.chosen-container {
+    position: absolute;
+    top: 6rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    font-family: 'mighty-souly';
+    font-size: 1.25rem;
+    letter-spacing: .1rem;
+}
+
+.chosen-container p {
+    padding: .1rem .25rem;
+    border-radius: .25rem;
+    background-color: var(--p1-earth-blue);
+    color: var(--p3-light-khaki);
+    box-shadow: 0 0 .5rem var(--white);
+}
+
+.chosen-map {
+    width: max-content;
+    height: max-content;
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: .25rem;
+    border: .1rem solid var(--p2-blue-zodiak);
+    background-color: rgba(227, 240, 175, .2);
+    border-radius: 1rem;
+    z-index: 10;
+}
+
+.map {
+    padding: .25rem;
+    border-radius: .75rem;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    filter: grayscale(100%);
+}
+
+.map img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.map:not(.active-map-index):hover {
+    transition: linear .25s;
+    background-color: var(--p1-earth-blue);
+    box-shadow: 0 0 .75rem var(--white);
+    cursor: pointer;
+    filter: grayscale(0%);
+}
+
+.map:hover img {
+    filter: none;
+}
+
+.active-map-index {
+    background-color: var(--p3-light-khaki);
+    box-shadow: 0 0 .75rem var(--p1-crystal-blue);
+    filter: none;
+}
+
+.first-section {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.first-section .title-page {
+    position: absolute;
+    width: 17rem;
+    top: 6rem;
+    left: 2.5rem;
+    z-index: 10;
+}
+
+.title-page p {
+    font-family: 'spenbeb-game';
+    font-size: 4rem;
+    color: var(--p2-blue-zodiak);
+    letter-spacing: .5rem;
+    text-shadow: 0 0 2rem var(--p2-bone);
+}
+
+.title-page hr {
+    border: .2rem solid var(--p4-phthalo-green);
+    border-radius: 10rem;
+}
+
+.second-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: max-content;
+    margin-top: 17rem;
+    margin-left: 2.5rem;
+    overflow: hidden;
+}
+
+.information .vertical-line {
+    position: relative;
+    z-index: 1;
+    width: .5rem;
+    height: 9.2rem;
+    background-color: var(--p1-earth-blue);
+}
+
+.information .map-identity {
+    position: absolute;
+    top: 0;
+    left: -32rem;
+    animation: slideFromLeft 1.5s ease normal forwards;
+}
+
+.map-identity .map-name {
+    font-family: 'mighty-souly';
+    font-size: 3.25rem;
+    color: var(--p3-light-khaki);
+    text-shadow: 0 0 .5rem var(--p1-earth-blue);
+    letter-spacing: .1rem;
+}
+
+.map-identity .map-description {
+    font-family: 'rationale';
+    font-size: 1.4rem;
+    width: 36rem;
+    height: 4.75rem;
+    color: var(--black);
+    text-shadow: 0 0 .5rem var(--p2-bone);
+    text-align: justify;
+}
+
+@keyframes slideFromLeft {
+    0% {
+        left: -32rem;
+    }
+
+    100% {
+        left: 1rem;
+    }
+}
+
+.map-picture {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.map-picture .carousel-container {
+    position: relative;
+    width: 68rem;
+    height: 28rem;
+    transform: rotateX(-8deg);
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel {
+    transform-style: preserve-3d;
+    animation: slideCarousel 25s linear infinite;
+    z-index: 2;
+}
+
+@keyframes slideCarousel{
+    from {
+        transform: rotateX(10deg) rotateY(0deg);
+    }
+    
+    to {
+        transform: rotateX(10deg) rotateY(360deg);
+    }
+}
+
+.carousel .image {
+    overflow: hidden;
+    position: absolute;
+    width: 36rem; 
+    height: 22rem;
+    transform: translateX(-50%) translateY(-50%) rotateY(calc((var(--currPos) - 1) * (360 / var(--amount)) * 1deg)) translateZ(28rem);
+    border-radius: 3rem;
+    opacity: 0;
+    animation: fadeEffectComponent .5s linear forwards;
+}
+
+@keyframes fadeEffectComponent {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.carousel .image img {
+    width: inherit;
+    height: inherit;
+    object-fit: contain;
+}
+
+.map-picture .map-pattern {
+    width: 100%;
+    max-width: 18rem;
+    height: 100%;
+    max-height: 18rem;
+}
+
+.map-pattern img {
+    width: inherit;
+    height: inherit;
+    object-fit: contain;
+    border-radius: .5rem;
+    opacity: 0;
+    animation: fadeEffectComponent .5s linear forwards;
+}

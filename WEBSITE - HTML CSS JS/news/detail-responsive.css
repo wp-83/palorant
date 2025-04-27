@@ -1,0 +1,12 @@
+@media only screen and (max-width: 600px) {
+    .second-section article {
+        padding: 0 2.5rem;
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .second-section article {
+        font-size: 1.5rem;
+    }
+}

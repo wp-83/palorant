@@ -1,0 +1,25 @@
+@media only screen and (max-width: 768px) {
+    .card {
+        zoom: 0.9;
+    }
+
+    .third-section p {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .cards-container {
+        flex-direction: column;
+    }
+
+    .card {
+        zoom: 1.2;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .third-section p {
+        font-size: 2.15rem;
+    }
+}

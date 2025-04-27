@@ -1,0 +1,10 @@
+@media only screen and (max-width: 1024px) {
+    .social-media-container {
+        gap: 1.5rem;
+    }
+    
+    .social-media-icon a {
+        max-width: 2.5rem;
+        max-height: 2.5rem;
+    }
+}

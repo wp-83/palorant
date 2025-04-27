@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PALORANT: MAPS</title>
+    <link rel="icon" type="icon" href="../../ASSETS/image/logo/palorant/export-result/dark/palorant-favicon.ico">
+    <link rel="stylesheet" href="../utils/utils.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="../navbar/navbar-responsive.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../footer/footer-responsive.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="../utils/data.js" defer></script>
+    <script src="../navbar/navbar.js" defer></script>
+    <script src="../footer/footer.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="nav-container"></div> <!--navbar is fetch with js-->
+    <main class="container">
+        <div class="video-background">
+            <video muted autoplay loop>
+                <source src="../../ASSETS/video/maps/01-fireball.mp4" alt="map-video-bg" type="video/mp4" class="video-bg">
+            </video>
+        </div>
+        <div class="chosen-container">
+            <p>LIST OF MAPS</p>
+            <div class="chosen-map">
+                <div class="map active-map-index" id="mapIdx">
+                    <img src="../../ASSETS/image/maps/01 - fireball/1.jpg" alt="map1" class="" id="map-image">
+                </div>
+                <div class="map" id="mapIdx">
+                    <img src="../../ASSETS/image/maps/02 - cloudy/1.jpg" alt="map2" class="" id="map-image">
+                </div>
+                <div class="map" id="mapIdx">
+                    <img src="../../ASSETS/image/maps/03 - snowlake/1.jpg" alt="map3" class="" id="map-image">
+                </div>
+                <div class="map" id="mapIdx">
+                    <img src="../../ASSETS/image/maps/04 - last-urban/1.jpg" alt="map4" class="" id="map-image">
+                </div>
+                <div class="map" id="mapIdx">
+                    <img src="../../ASSETS/image/maps/05 - forest/1.jpg" alt="map5" class="" id="map-image">
+                </div>
+            </div>
+        </div>
+        <section class="first-section">
+            <div class="title-page">
+                <p>MAPS</p>
+                <hr>
+            </div>
+        </section>
+        <section class="second-section">
+            <div class="information">
+                <div class="vertical-line"></div>
+                <div class="map-identity">
+                    <p class="map-name">FIREBALL</p>
+                    <p class="map-description">FIREBALL is the most popular map using by players. This map has two sides and very complex for beginner. Then, it also has many rooms with available place for hiding.</p>
+                </div>
+            </div>
+            <div class="map-picture">
+                <div class="carousel-container">
+                    <div class="carousel" style="--amount: 5">
+                        <div class="image" style="--currPos: 1">
+                            <img src="../../ASSETS/image/maps/01 - fireball/1.jpg" alt="picture-1">
+                        </div>
+                        <div class="image" style="--currPos: 2">
+                            <img src="../../ASSETS/image/maps/01 - fireball/3.jpg" alt="picture-2">
+                        </div>
+                        <div class="image" style="--currPos: 3">
+                            <img src="../../ASSETS/image/maps/01 - fireball/4.jpg" alt="picture-3">
+                        </div>
+                        <div class="image" style="--currPos: 4">
+                            <img src="../../ASSETS/image/maps/01 - fireball/5.jpg" alt="picture-4">
+                        </div>
+                        <div class="image" style="--currPos: 5">
+                            <img src="../../ASSETS/image/maps/01 - fireball/6.jpg" alt="picture-5">
+                        </div>
+                    </div>
+                </div>
+                <div class="map-pattern">
+                    <img src="../../ASSETS/image/maps/01 - fireball/2.jpg" alt="map-pattern">
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer-container"></div> <!--footer is fetch with js-->
+</body>
+</html>

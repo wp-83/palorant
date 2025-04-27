@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PALORANT: REPORT BUGS</title>
+    <link rel="icon" type="icon" href="../../ASSETS/image/logo/palorant/export-result/dark/palorant-favicon.ico">
+    <link rel="stylesheet" href="../utils/utils.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="../navbar/navbar-responsive.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../footer/footer-responsive.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="../utils/data.js" defer></script>
+    <script src="../navbar/navbar.js" defer></script>
+    <script src="../footer/footer.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="nav-container"></div> <!--navbar is fetch with js-->
+    <main class="container">
+        <video muted autoplay loop>
+            <source src="../../ASSETS/video/background/maps_video.mp4" alt="video-bg">
+        </video>
+        <section class="first-section">
+            <div class="first-content">
+                <p class="description">LET US KNOW YOUR PROBLEMS!</p>
+                <hr>
+                <p class="sub-description">Your report will make us become better</p>
+            </div>
+        </section>
+        <section class="second-section">
+            <form id="report">
+                <div class="form-additional-container">
+                    <div class="left-side">
+                        <div class="text container-input">
+                            <label for="username">USERNAME</label>
+                            <input type="text" name="username" id="username" placeholder="Example: palor123_">
+                            <p class="username-error error-message"></p>
+                        </div>
+                        <div class="text container-input">
+                            <label for="email">EMAIL</label>
+                            <input type="text" name="email" id="email" placeholder="Example: palorant.player123@gmail.com">
+                            <p class="email-error error-message"></p>
+                        </div>
+                        <div class="dropdown container-input">
+                            <label for="server">SERVER REGION</label>
+                            <select name="server" id="server">
+                                <option value="placeholder">Select your server region...</option>
+                                <option value="asia">Asia</option>
+                                <option value="america">America</option>
+                                <option value="europe">Europe</option>
+                                <option value="australia">Australia</option>
+                                <option value="africa">Africa</option>
+                            </select>
+                            <p class="server-error error-message"></p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="file container-input">
+                            <label for="file-report">ATTACHMENT ABOUT BUGS</label>
+                            <div class="file-button-container">
+                                <label for="file-button" class="file-button">
+                                    Upload your file
+                                    <input type="file" name="file-report" id="file-button">
+                                </label>
+                                <span class="file-name"></span>
+                            </div>
+                            <p class="file-error error-message"></p>
+                        </div>
+                        <div class="textarea container-input">
+                            <label for="description-bugs">DESCRIPTION BUGS</label>
+                            <textarea name="description-bugs" id="descBugs" placeholder="Your bugs details..." rows="8"></textarea>
+                            <p class="description-error error-message"></p>
+                        </div>
+                        <div class="email-follow-up">
+                            <input type="checkbox" name="follow-up-email" id="isSendEmail">
+                            <label for="follow-up-email"><b>Send follow up emails to your email account (optional)</b></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-form">
+                    <button type="reset" id="clear" class="clear">CLEAR FORM</button>
+                    <button type="submit" id="submit" class="send">SEND REPORT</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <div id="footer-container"></div> <!--footer is fetch with js-->
+</body>
+</html>

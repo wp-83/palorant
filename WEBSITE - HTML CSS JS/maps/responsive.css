@@ -1,0 +1,78 @@
+@media only screen and (max-width: 1024px) {
+    .carousel-container {
+        zoom: 0.8;
+    }
+
+    .map-picture .map-pattern {
+        max-width: 16rem;
+        max-height: 16rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .video-background {
+        zoom: 1.7;
+    }
+    
+    .carousel-container {
+        zoom: 0.9;
+        padding-right: 2rem;
+    }
+    
+    .map-picture {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding-right: 2rem;
+    }
+
+    .map-picture .map-pattern {
+        max-width: 36rem;
+        max-height: 36rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .video-background {
+        zoom: 1.55;
+    }
+
+    .carousel-container {
+        zoom: 0.75;
+    }
+
+    .map-picture .map-pattern {
+        max-width: 32rem;
+        max-height: 32rem;
+    }
+
+    .map-identity .map-description {
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .chosen-container {
+        top: 15vh;
+        left: 2rem;
+        align-items: flex-start;
+        zoom: 1.2;
+    }
+
+    .second-section {
+        top: 13vh;
+    }
+
+    .video-background {
+        zoom: 1.55;
+    }
+
+    .carousel-container {
+        zoom: 0.6;
+    }
+
+    .map-picture .map-pattern {
+        max-width: 28rem;
+        max-height: 28rem;
+    }
+}

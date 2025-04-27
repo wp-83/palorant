@@ -1,0 +1,39 @@
+@media only screen and (max-width: 1024px) {
+    video {
+        height: 90vh;
+    }
+}
+
+@media only screen and (max-width: 768px) { 
+    video {
+        height: 85vh;
+    }
+
+    section img {
+        max-width: 32rem;
+    }
+
+    .message .title {
+        font-size: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) { 
+    video {
+        height: 80vh;
+    }
+}
+
+@media only screen and (max-width: 480px) { 
+    video {
+        height: 75vh;
+    }
+
+    section img {
+        max-width: 36rem;
+    }
+
+    .message .title {
+        font-size: 3rem;
+    }
+}

@@ -1,0 +1,199 @@
+.container {
+    position: relative;
+}
+
+.background-logo {
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    background-image: url("../../ASSETS/image/logo/palorant/export-result/dark/palorant-dark-no-text.png");
+    background-size: 4rem;
+    opacity: .1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-logo img {
+    width: 70%;
+}
+
+.first-section {
+    margin-bottom: 1rem;
+    width: max-content;
+    padding-left: 2.5rem;
+    padding-top: 5rem;
+}
+
+.first-section hr {
+    border: .2rem solid var(--p4-phthalo-green);
+    border-radius: 10rem;
+}
+
+.first-section p {
+    font-family: 'spenbeb-game';
+    font-size: 4rem;
+    color: var(--p2-blue-zodiak);
+    letter-spacing: .5rem;
+    text-shadow: 0 0 2rem var(--p2-bone);
+}
+
+marquee {
+    position: relative;
+    height: 2rem;
+    width: 100%;
+    font-family: 'rationale';
+    font-size: 1.25rem;
+    color: var(--white);
+    letter-spacing: .1rem;
+    background-color: var(--p4-medium-spring-green);
+    padding: .25rem 0;
+    margin: .75rem 0;
+}
+
+.news-container {
+    margin: 0 2.25rem;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: .75rem;
+    flex-wrap: wrap;
+}
+
+.news {
+    width: 100%;
+    height: 100%;
+    max-width: 28rem;
+    max-height: 26rem;
+    padding: .75rem;
+    margin: .75rem;
+}
+
+.news .top {
+    position: relative;
+    width: 100%;
+    max-width: 26rem;
+    height: max-content;
+    overflow: hidden;
+    border-radius: .75rem;
+}
+
+.news .top img {
+    width: 100%;
+    max-width: 26rem;
+    border-radius: .75rem;
+    opacity: .8;
+}
+
+.news .top .news-category {
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    width: max-content;
+    height: max-content;
+    background-color: yellowgreen;
+    font-family: 'rationale';
+    font-size: 1.2rem;
+    padding: .1rem .5rem;
+    border-radius: .5rem;
+}
+
+.news .top .release-date {
+    position: absolute;
+    bottom: .75rem;
+    right: .5rem;
+    width: max-content;
+    height: max-content;
+    background-color: var(--p3-light-khaki);
+    font-family: 'rationale';
+    font-size: 1rem;
+    color: var(--p1-earth-blue);
+    padding: .1rem .5rem;
+    border-radius: .5rem;
+}
+
+.news .bottom {
+    border-left: .5rem solid var(--p3-eucalyptus);
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 26rem;
+    height: max-content;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 1rem;
+}
+
+.news .bottom .headline {
+    font-family: 'mighty-souly';
+    font-size: 1.5rem;
+    color: var(--p2-blue-zodiak);
+}
+
+.news .bottom .description {
+    font-family: 'rationale';
+    font-size: 1.25rem;
+    text-align: justify;
+    color: var(--black);
+}
+
+.news:hover {
+    cursor: pointer;
+}
+
+.news:hover .top {
+    transition: linear .25s;
+    box-shadow: 0 0 1.5rem var(--p3-light-khaki);
+}
+
+.news:hover .top img {
+    transition: linear .1s;
+    border: .25rem solid var(--p1-earth-blue);
+    opacity: 1;
+}
+
+.news:hover .bottom {
+    transition: linear .25s;
+    background-color: rgba(254, 250, 246, .6);
+}
+
+.news a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+}
+
+.third-section {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2.5rem;
+    padding-top: .25rem;
+}
+
+.third-section button {
+    background-color: var(--p3-light-khaki);
+    font-family: 'mighty-souly';
+    font-size: 1.75rem;
+    color: var(--p1-earth-blue);
+    letter-spacing: .1rem;
+    padding: .25rem .75rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+button:hover {
+    transition: linear .25s;
+    cursor: pointer;
+    background-color: var(--p1-earth-blue);
+    color: var(--white);
+    box-shadow: 0 0 1rem var(--white);
+}
