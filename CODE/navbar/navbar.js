@@ -1,4 +1,4 @@
-fetch("../navbar/navbar.html").then((res) => {
+fetch("CODE/navbar/navbar.html").then((res) => {
     return res.text();
 }).then((data) => {
     const parser = new DOMParser();
