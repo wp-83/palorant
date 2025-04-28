@@ -141,9 +141,15 @@ a {
     width: 70%;
 }
 
-@media only screen and (max-width: 1024px) { /*dekstop mode*/
+@media only screen and (max-width: 1366px) { /*dekstop mode*/
     html {
         font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 1024px) { /*dekstop mode*/
+    html {
+        font-size: 12.5px;
     }
 }
 
