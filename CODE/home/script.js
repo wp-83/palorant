@@ -120,12 +120,11 @@ const contents = document.querySelectorAll("#agents-content");
 let count = 0;
 
 contents.forEach(content => {
-    content.querySelector(".roles").querySelector(".roles-picture").src = agents[agentsBookIdx[count]].role.image;
-    const firstLetter = agents[agentsBookIdx[count]].role.name.charAt(0).toUpperCase();
-    content.querySelector(".roles").querySelector("p").innerHTML = firstLetter + agents[agentsBookIdx[count]].role.name.slice(1);
-    content.querySelector(".background-agent").src = agents[agentsBookIdx[count]].favMap.image[0];
-    content.querySelector(".agent-picture-book").src = agents[agentsBookIdx[count]].image;
-    content.querySelector(".agent-name-book").querySelector("p").innerHTML = agents[agentsBookIdx[count]].name;
-    content.querySelector(".page-number").querySelector("p").innerHTML = count+1;
+    if(content.querySelector(".roles") != null) content.querySelector(".roles").querySelector(".roles-picture").src = agents[agentsBookIdx[count]].role.image;
+    if(content.querySelector(".roles") != null) content.querySelector(".roles").querySelector("p").innerHTML = agents[agentsBookIdx[count]].role.name.charAt(0).toUpperCase() + agents[agentsBookIdx[count]].role.name.slice(1);
+    if(content.querySelector(".background-agent") != null) content.querySelector(".background-agent").src = agents[agentsBookIdx[count]].favMap.image[0];
+    if(content.querySelector(".agent-picture-book") != null) content.querySelector(".agent-picture-book").src = agents[agentsBookIdx[count]].image;
+    if(content.querySelector(".agent-name-book") != null) content.querySelector(".agent-name-book").querySelector("p").innerHTML = agents[agentsBookIdx[count]].name;
+    if(content.querySelector(".page-number") != null) content.querySelector(".page-number").querySelector("p").innerHTML = count+1;
     count++;
 });
