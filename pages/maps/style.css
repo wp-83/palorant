@@ -1,3 +1,7 @@
+body {
+    overflow-X: hidden;
+}
+
 .container {
     position: relative;
 }
