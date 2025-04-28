@@ -161,6 +161,12 @@ a {
 
 @media only screen and (max-width: 480px) { /*smartphone portrait*/
     html {
-        font-size: 10px;
+        font-size: 9.5px;
+    }
+}
+
+@media only screen and (max-width: 400px) { /*smartphone smaller*/
+    html {
+        font-size: 8px;
     }
 }
