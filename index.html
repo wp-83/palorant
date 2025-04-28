@@ -115,10 +115,8 @@
 
     <script>
         const checkbox = document.getElementById("verifyHuman");
-        window.addEventListener("load", () => {
-            setTimeout(() => {
-                checkbox.checked = false;     
-            }, 10);
+        window.addEventListener("pageshow", () => {
+            if (checkbox.checked) checkbox.checked = false;
         });
 
         checkbox.addEventListener("input", () => {
