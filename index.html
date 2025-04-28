@@ -115,9 +115,8 @@
 
     <script>
         const checkbox = document.getElementById("verifyHuman");
-        document.addEventListener("DOMContentLoaded", () => {
-            document.querySelector(".additional").style.display = "none";
-            checkbox.disabled = false;
+        window.addEventListener("load", () => {
+            checkbox.checked = false;
         });
 
         checkbox.addEventListener("input", () => {
