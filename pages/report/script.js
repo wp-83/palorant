@@ -35,7 +35,7 @@ function validateUsername(usernameData){
     for (let i = 0; i < lengthUsername; i++){
         let check = usernameData[i];
 
-        if (check == ' '){
+        if (check == ''){
             return false;
         }
 
@@ -106,7 +106,7 @@ function validateDescription(descriptionData){
     let countWord = 0;
     const words = descriptionData.split(" ");
     for (let word of words){
-        if (word.length > 1 && word != " "){
+        if (word != ''){
             countWord++;
         }
     }
@@ -128,7 +128,7 @@ reportForm.addEventListener("submit", (e) => {
 
     if (!validateUsername(username)){
         isValid = false;
-        errorUsername.innerHTML = "Username must have 9 to 12 characters and only consist of lowercase letters, numbers between 0 and 9, minimumly have one unique symbol '!@#$_', and can't contain any space";
+        errorUsername.innerHTML = "Username must have 9 to 12 characters, only consist of lowercase letters or numbers between 0 and 9, must have at least one unique symbol '!@#$_', and can't contain any space";
     } else {
         errorUsername.innerHTML = "";
     }
