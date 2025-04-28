@@ -15,11 +15,11 @@
         .loader {
             position: absolute;
             left: 50%;
-            top: 50%;
-            width: 20rem;
-            height: 20rem;
-            border: .5rem solid rgb(233, 233, 233);
-            border-top: .5rem solid rgb(0, 0, 94);
+            top: 40%;
+            width: 22rem;
+            height: 22rem;
+            border: .75rem solid rgb(233, 233, 233);
+            border-top: .75rem solid rgb(0, 0, 94);
             border-radius: 50%;
             animation: spinLoader 2s linear infinite;
         }
@@ -36,7 +36,7 @@
 
         .logo {
             position: absolute;
-            top: 50%;
+            top: 40%;
             left: 50%;
             transform: translateX(-50%) translateY(-50%);
             animation: transparancy .4s linear infinite alternate;
@@ -45,7 +45,7 @@
 
         @keyframes transparancy {
             from {
-                opacity: .75;
+                opacity: .6;
             }
 
             to {
@@ -57,32 +57,75 @@
             width: 10rem;
         }
 
-        .goToNext {
-            animation: none;
-            transform: scale(10);
+        .checkbox {
+            width: 22rem;
+            height: 4rem;
+            background-color: rgb(229, 229, 229);
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 1.25rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: .5rem;
+            padding: 0 .5rem;
+            position: absolute;
+            left: 50%;
+            top: 72%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        input[type=checkbox]{
+            zoom: 3;
+        }
+
+        .additional {
+            font-size: 1rem;
+            position: absolute;
+            top: 78%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+
+        .additional {
+            display: none;
+        }
+
+        @media only screen and (max-width: 480px) {
+            body {
+                zoom: .8;
+            }
         }
     </style>
 </head>
-<body onload="setDelay()">
+<body>
     <div class="loader"></div>
     <div class="logo">
         <img src="ASSETS/image/logo/palorant/export-result/dark/palorant-dark-text.png" alt="logo">
     </div>
+    <div class="checkbox">
+        <input type="checkbox" id="verifyHuman">
+        <label for="checkbox">VERIFY YOU ARE HUMAN</label>
+    </div>
+    <div class="additional">
+        <p>Redirecting to homepage...</p>
+    </div>
 
     <script>
-        function setDelay() {
-            let delayTime = setTimeout(animationAfterLoader, 3000);
-        }
+        const checkbox = document.getElementById("verifyHuman");
+        checkbox.addEventListener("input", () => {
+            const value = checkbox.checked;
+            if (value){
+                document.querySelector(".additional").style.display = "inline-block";
+                checkbox.disabled = true;
 
-        function animationAfterLoader() {
-            document.querySelector(".loader").style.display = "none";
-            document.querySelector(".logo").classList.add("goToNext");
-            let delayTime = setTimeout(showPage, 1000);
-        }
-
-        function showPage(){
-            window.location.href = "pages/home/home.html";
-        }
+                setTimeout(() => {
+                    window.location.href = "pages/home/home.html";
+                }, 3000);
+            }
+        });
     </script>
 </body>
 </html>
