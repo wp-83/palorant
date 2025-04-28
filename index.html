@@ -117,6 +117,8 @@
         const checkbox = document.getElementById("verifyHuman");
         window.addEventListener("pageshow", () => {
             if (checkbox.checked) checkbox.checked = false;
+            checkbox.disabled = false;
+            document.querySelector(".additional").style.display = "none";
         });
 
         checkbox.addEventListener("input", () => {
